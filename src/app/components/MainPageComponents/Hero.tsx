@@ -16,7 +16,7 @@ const Hero = ({ url }: urlProps) => {
             <div className='relative z-20 text-white flex justify-center h-full w-full flex-col max-w-4xl mx-auto gap-10'>
                 <h1 className='text-xl lg:text-6xl font-bold'>Indonesia's leading mobile app development agency</h1>
                 <p className='text-md lg:text-2xl'>
-                    Founded in South Jakarta, Ice House is the first Google Certified Developer in South East Asia. We design,
+                    Founded in South Jakarta, Banteng is the first Google Certified Developer in South East Asia. We design,
                     build and maintain mobile apps and their backends for most of the leading companies in various industries,
                     like financial services, logistics and transportation, e-commerce, entertainment, loyalty and many more.
                 </p>
