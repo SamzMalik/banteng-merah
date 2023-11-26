@@ -13,7 +13,7 @@ const Footer = () => {
                         <Image className="w-44" src='https://github.com/SamzMalik/samz-img-collections/blob/main/flexbrand-logo/Certified_Andriod_Badge_2017_2018_Cropped-768x380.png?raw=true' width={512} height={512} alt="" />
                     </div>
                     <h1 className='lg:text-2xl font-bold text-white max-w-2xl'>
-                        Ice House is the first Google certified agency in South East Asia.
+                        Banteng is the first Google certified agency in South East Asia.
                         Work with us in Indonesia, Singapore, Australia & The Netherlands.
                     </h1>
                 </div>

@@ -8,11 +8,8 @@ import Footer from './components/Footer/Footer'
 const poppins = Poppins({ subsets: ['latin'], weight: ["300", "400", "500", "700"] })
 
 export const metadata: Metadata = {
-  title: 'Icehouse',
-  description: "Indonesia's leading mobile app development agency",
-  icons: {
-    icon: '/next.svg',
-  },
+  title: 'Banteng',
+  description: "Banteng is a leading mobile app development agency in Indonesia",
 }
 
 export default function RootLayout({
