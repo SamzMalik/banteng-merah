@@ -5,6 +5,8 @@ import Link from "next/link";
 
 const NavigationBar = () => {
 
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false)
+
   const menuItems = [
     "About",
     "Services",
@@ -14,9 +16,9 @@ const NavigationBar = () => {
   ]
 
   return (
-    <Navbar isBordered shouldHideOnScroll className='shadow-lg z-50'>
+    <Navbar onMenuOpenChange={setIsMenuOpen} isMenuOpen={isMenuOpen} isBordered shouldHideOnScroll className='shadow-lg z-50'>
       <NavbarContent className="sm:hidden" justify="start">
-        <NavbarMenuToggle />
+        <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
       </NavbarContent>
 
       <NavbarContent justify="start">
@@ -37,9 +39,21 @@ const NavigationBar = () => {
       </NavbarContent>
 
       {/* Navbar Menu */}
-      <NavbarMenu className="bg-black">
-        <NavbarMenuItem>
-          <Link href='/'>About</Link>
+      <NavbarMenu className="bg-primary-white">
+        <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <Link href='/about'>About</Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <Link href='/services'>Services</Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <Link href='/portofolio'>Portofolio</Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <Link href='/teams'>Teams</Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <Link href='/contact'>Contact</Link>
         </NavbarMenuItem>
       </NavbarMenu>
 

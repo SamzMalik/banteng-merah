@@ -64,7 +64,7 @@ export default function Home() {
           <CardCounter metric="+ staffs" duration={3} end={200}>Of Indonesia's most talented staffs</CardCounter>
           <CardCounter metric="+ clients" duration={3} end={65}>Most of them are big company</CardCounter>
         </div>
-        <div className="container p-2 gap-4 mx-auto grid grid-cols-1 lg:flex lg:justify-center lg:flex-wrap text-white text-xl">
+        <div className="container p-2 gap-4 mx-auto grid grid-cols-2 lg:flex lg:justify-center lg:flex-wrap text-white text-xl">
 
           <div className="text-center text-sm lg:text-xl flex flex-col justify-center items-center">
             <Image className="w-44 lg:96" src='https://github.com/SamzMalik/samz-img-collections/blob/main/flexbrand-logo/services-1.png?raw=true' alt="services" width={512} height={512} />
@@ -108,7 +108,7 @@ export default function Home() {
 
       <section className="bg-primary-white p-2 flex flex-col items-center justify-center lg:py-10 relative">
         <div className="container mx-auto flex flex-col gap-8 relative z-30">
-          <h1 className="text-4xl font-bold text-primary-black text-center">Testimonial</h1>
+          <h1 className="text-4xl font-bold text-primary-white text-center">Testimonial</h1>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 flex-wrap">
             {testimonialComments && testimonialComments.map(user => {
               return <TestimonialCard key={user.userName} companyImg={user.companyImg} userComment={user.userComment} userName={user.userName} userRole={user.userRole} />

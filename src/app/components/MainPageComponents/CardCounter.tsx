@@ -11,7 +11,7 @@ type CardCounterProps = {
 
 const CardCounter = ({ metric, children, duration, end }: CardCounterProps) => {
     return (
-        <Card className='bg-[#171717] w-[180px] h-44 text-white lg:w-[350px] '>
+        <Card className='bg-[#171717] w-[165px] h-44 text-white lg:w-[350px] '>
             <CardHeader>
                 <TextCounter className='text-xl lg:text-4xl font-bold' duration={duration} end={end} />
                 <p className="text-lg lg:text-2xl">{metric}</p>
