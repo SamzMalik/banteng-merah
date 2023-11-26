@@ -8,7 +8,14 @@ const config = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary-white': '#F5F5F4',
+        'primary-black': '#171717',
+      }
+    },
+
+
   },
   darkMode: "class",
   plugins: [nextui()]

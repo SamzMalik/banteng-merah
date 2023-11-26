@@ -1,35 +1,32 @@
+'use client'
 import React from 'react'
-import { Button, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
+import { Button, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, menuItem } from "@nextui-org/react";
 import Link from "next/link";
 
 const NavigationBar = () => {
 
   const menuItems = [
+    "About",
     "Services",
     "Portofolio",
-    "About",
     "Teams",
     "Contact"
   ]
 
   return (
-    <Navbar isBordered shouldHideOnScroll >
+    <Navbar isBordered shouldHideOnScroll className='shadow-lg z-50'>
       <NavbarContent className="sm:hidden" justify="start">
         <NavbarMenuToggle />
       </NavbarContent>
 
-      <NavbarContent justify="center">
-        <NavbarBrand className="sm:hidden">
-          <h1>Logo</h1>
+      <NavbarContent justify="start">
+        <NavbarBrand className="">
+          <Link href='/'>Logo</Link>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarBrand><h1>Logo</h1></NavbarBrand>
-        <NavbarItem><Link href='/'>Home</Link></NavbarItem>
-        <NavbarItem><Link href='/'>Home</Link></NavbarItem>
-        <NavbarItem><Link href='/'>Home</Link></NavbarItem>
-        <NavbarItem><Link href='/'>Home</Link></NavbarItem>
+        {menuItems.map(item => <NavbarItem key={item}><Link href={`/${item.toLowerCase()}`}>{item}</Link></NavbarItem>)}
       </NavbarContent>
 
       {/* Sign up or Login */}
