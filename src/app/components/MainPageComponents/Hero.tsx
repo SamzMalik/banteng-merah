@@ -10,7 +10,9 @@ const Hero = ({ url }: urlProps) => {
     const [isMobile] = useScreenDetector()
     return (
         <main className="h-screen w-full relative text-center">
-            <video className="w-full h-full absolute object-cover z-10 opacity-90 blur-sm" autoPlay muted loop src={isMobile ? url[0] : url[1]} />
+            <video className="w-full h-full absolute object-cover z-10 opacity-90" autoPlay muted loop >
+                <source src='/loopvideo.mp4' />
+            </video>
             <div className='relative z-20 text-white flex justify-center h-full w-full flex-col max-w-4xl mx-auto gap-10'>
                 <h1 className='text-xl lg:text-6xl font-bold'>Indonesia's leading mobile app development agency</h1>
                 <p className='text-md lg:text-2xl'>
