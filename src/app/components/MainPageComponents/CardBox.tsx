@@ -13,7 +13,7 @@ type CardBoxProps = {
 
 const CardBox = ({ src, companyName, companyDesc, overlay }: CardBoxProps) => {
     return (
-        <motion.div whileHover={{ scale: 1.05 }} className="aspect-video rounded-xl overflow-hidden relative bg-opacity-40 bg-cover flex flex-col items-center-center justify-center shadow-lg">
+        <motion.div initial={{ opacity: 0, scale: 0 }} whileHover={{ scale: 1.05 }} whileInView={{ opacity: 100, scale: 1, }} transition={{ duration: 1 }} className="aspect-video rounded-xl overflow-hidden relative bg-opacity-40 bg-cover flex flex-col items-center-center justify-center shadow-lg">
             <div className={'absolute h-full w-full z-0' + ` ${overlay}`}></div>
             <div className='relative z-10 flex flex-col justify-center items-center lg:gap-8'>
                 <Image className='w-24 h-24 lg:w-64 lg:h-64' width={512} height={512} src={src} alt='logo' />

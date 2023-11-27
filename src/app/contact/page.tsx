@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { IoMail, IoCall } from "react-icons/io5";
 import FormContact from '../components/ContactPageComponents/FormContact';
 
+
 const ContactPage = () => {
     return (
         <main className='lg:h-screen w-full relative flex items-center'>
@@ -27,11 +28,6 @@ const ContactPage = () => {
                     <FormContact />
                 </div>
             </div>
-
-
-
-
-
         </main>
     )
 }

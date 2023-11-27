@@ -6,6 +6,8 @@ const nextConfig = {
         remotePatterns: [{
             hostname: 'github.com'
 
+        }, {
+            hostname: 'randomuser.me'
         }],
     }
 }
