@@ -46,7 +46,7 @@ const AboutHero = () => {
                         <motion.h1 initial={{ opacity: 0, scale: 2 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 1.5 }} className="text-6xl font-bold text-primary-white text-center">We are Bantengs</motion.h1>
                     </div>
                 </div>
-                <motion.div initial={{ scale: 0, opacity: 0 }} transition={{ duration: 1, delay: 1.5 }} whileInView={{ scale: 1, opacity: 100 }} className="flex items-center justify-center h-1/3">
+                <motion.div initial={{ scale: 0, opacity: 0 }} transition={{ duration: 1, delay: 1 }} whileInView={{ scale: 1, opacity: 100 }} className="flex items-center justify-center h-1/3">
                     <h1 className="text-2xl lg:text-5xl font-bold text-primary-black max-w-5xl text-center">We want to make a good quality mobile apps that is scalable and stable</h1>
                 </motion.div>
             </div>
@@ -58,7 +58,7 @@ const AboutHero = () => {
                     <p>We have a team of more than 60+ world-class designers, architects, developers, business analysts, testers and project managers who have collectively shipped product for some of the world’s largest companies and most innovative startups.</p>
                 </motion.div>
             </div>
-            <div className="lg:h-[85vh] bg-primary-white flex flex-col justify-center p-2 py-4 gap-4">
+            <div className="lg:h-[85vh] bg-primary-white flex flex-col justify-center p-2 py-4 gap-4 overflow-hidden">
                 <div className="container mx-auto text-primary-white text-xl">
                     <h1 className="text-primary-black text-4xl font-bold text-center">Meet our team</h1>
                 </div>
@@ -77,7 +77,6 @@ const AboutHero = () => {
                                     </CardBody>
                                 </Card>
                             </motion.div>
-
                         )
                     })}
                 </div>
