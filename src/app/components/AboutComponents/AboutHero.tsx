@@ -5,9 +5,23 @@ import { Card, CardBody, CardHeader } from "@nextui-org/react"
 import { useState, useEffect } from 'react'
 import useScreenDetector from "@/hooks/useScreenDetector"
 
+type Team = {
+    name: {
+        title: string,
+        first: string,
+        last: string
+    },
+    email: string,
+    cell: string,
+    picture: {
+        large: string,
+    }
+
+}[]
+
 
 const AboutHero = () => {
-    const [team, setTeam] = useState([])
+    const [team, setTeam] = useState<Team>()
     const [isMobile] = useScreenDetector()
 
     useEffect(() => {
@@ -49,7 +63,7 @@ const AboutHero = () => {
                     <h1 className="text-primary-black text-4xl font-bold text-center">Meet our team</h1>
                 </div>
                 <div className="container mx-auto grid grid-cols-2 lg:grid-cols-4 justify-center gap-2">
-                    {team && team.map((person, i) => {
+                    {team && team.map((person, i): any => {
                         return (
                             <motion.div transition={{ duration: 1, delay: i * 0.2 }} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
                                 <Card>
