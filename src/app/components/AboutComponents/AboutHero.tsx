@@ -3,10 +3,12 @@ import Image from "next/image"
 import { motion } from 'framer-motion'
 import { Card, CardBody, CardHeader } from "@nextui-org/react"
 import { useState, useEffect } from 'react'
+import useScreenDetector from "@/hooks/useScreenDetector"
 
 
 const AboutHero = () => {
     const [team, setTeam] = useState([])
+    const [isMobile] = useScreenDetector()
 
     useEffect(() => {
         async function getUser() {
@@ -34,9 +36,9 @@ const AboutHero = () => {
                     <h1 className="text-2xl lg:text-5xl font-bold text-primary-black max-w-5xl text-center">We want to make a good quality mobile apps that is scalable and stable</h1>
                 </motion.div>
             </div>
-            <div className="bg-primary-black flex flex-col justify-center items-center">
-                <motion.div initial={{ x: -500, opacity: 0, }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 2 }} className="container mx-auto flex flex-col text-primary-white gap-6 max-w-4xl text-xl">
-                    <h1 className="text-4xl font-bold">Company History</h1>
+            <div className="lg:h-[80vh] bg-primary-black flex flex-col justify-center items-center p-2 py-5 text-center lg:text-left">
+                <motion.div initial={{ x: isMobile ? -300 : -500, opacity: 0, }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 2 }} className="container mx-auto flex flex-col text-primary-white gap-6 max-w-4xl text-xl">
+                    <h1 className="lg:text-4xl font-bold">Company History</h1>
                     <p>Ice House is the first Google Certified Mobile Development Company in South East Asia. We are a global software development agency that offers on-demand technical consulting, product strategy, design and engineering services.</p>
                     <p>With more than 65+ clients globally, Ice House has deployed mobile apps used by millions of people every day. Our clients include: Paramount Pictures, World Bank, Unilever, Ikea, Lion Air Group, Blue Bird, Bank of Centra Asia (BCA), Mandiri Sekuritas, HaloDoc, Sinarmas, Prodia as well as leading Indonesian Unicorns: Traveloka and Go-Jek</p>
                     <p>We have a team of more than 60+ world-class designers, architects, developers, business analysts, testers and project managers who have collectively shipped product for some of the world’s largest companies and most innovative startups.</p>
@@ -47,18 +49,20 @@ const AboutHero = () => {
                     <h1 className="text-primary-black text-4xl font-bold text-center">Meet our team</h1>
                 </div>
                 <div className="container mx-auto grid grid-cols-2 lg:grid-cols-4 justify-center gap-2">
-                    {team && team.map(person => {
+                    {team && team.map((person, i) => {
                         return (
-                            <Card>
-                                <CardHeader>
-                                    <Image width={128} height={128} src={person.picture.large} alt={person.name.first} className="w-full h-44 lg:h-56 object-cover rounded-md" />
-                                </CardHeader>
-                                <CardBody>
-                                    <h1 className="font-bold">{person.name.first} {person.name.last}</h1>
-                                    <p>{person.email}</p>
-                                    <p>{person.cell}</p>
-                                </CardBody>
-                            </Card>
+                            <motion.div transition={{ duration: 1, delay: i * 0.2 }} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+                                <Card>
+                                    <CardHeader>
+                                        <Image width={128} height={128} src={person.picture.large} alt={person.name.first} className="w-full h-44 lg:h-56 object-cover rounded-md" />
+                                    </CardHeader>
+                                    <CardBody>
+                                        <h1 className="font-bold">{person.name.first}</h1>
+                                        <p>{person.email}</p>
+                                        <p>{person.cell}</p>
+                                    </CardBody>
+                                </Card>
+                            </motion.div>
 
                         )
                     })}
