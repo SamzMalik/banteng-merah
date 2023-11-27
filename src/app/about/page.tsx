@@ -3,7 +3,7 @@ import AboutHero from '../components/AboutComponents/AboutHero'
 
 const AboutPage = () => {
     return (
-        <main>
+        <main className='w-full overflow-hidden'>
             <AboutHero />
 
         </main>

@@ -35,7 +35,7 @@ const AboutHero = () => {
 
     console.log(team)
     return (
-        <main>
+        <main className="w-full overflow-hidden">
             <div className="h-screen relative">
                 <div className="h-2/3 flex items-center justify-center relative">
                     <Image src='/about.jpg' width={1920} height={1080} alt="about-bg" className="w-full h-full absolute object-cover blur-[1.5px] opacity-90" />
@@ -58,7 +58,7 @@ const AboutHero = () => {
                     <p>We have a team of more than 60+ world-class designers, architects, developers, business analysts, testers and project managers who have collectively shipped product for some of the world’s largest companies and most innovative startups.</p>
                 </motion.div>
             </div>
-            <div className="lg:h-[85vh] bg-primary-white flex flex-col justify-center p-2 py-4 gap-4 overflow-hidden">
+            <div className="lg:h-[85vh] bg-primary-white flex flex-col justify-center p-2 py-4 gap-4">
                 <div className="container mx-auto text-primary-white text-xl">
                     <h1 className="text-primary-black text-4xl font-bold text-center">Meet our team</h1>
                 </div>
