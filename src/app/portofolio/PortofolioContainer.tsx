@@ -1,7 +1,10 @@
+import { useRouter } from 'next/navigation'
 import { Button, Card, CardBody, CardFooter, CardHeader, Image } from '@nextui-org/react'
 import React from 'react'
+import ButtonCard from '../components/PortofolioComponents/ButtonCard'
 
 type PortfolioProps = {
+    id: number,
     name: string,
     imageSrc: string,
     headline: string,
@@ -10,6 +13,7 @@ type PortfolioProps = {
 }[]
 
 const PortofolioContainer: React.FC<{ data: PortfolioProps }> = ({ data }) => {
+    const router = useRouter()
     return (
         <>
             {data && data.map(item => {
@@ -24,7 +28,7 @@ const PortofolioContainer: React.FC<{ data: PortfolioProps }> = ({ data }) => {
                         <p>{item.description}</p>
                     </CardBody>
                     <CardFooter>
-                        <Button className='w-1/2'>See Project</Button>
+                        <ButtonCard idPortofolio={item.id}>See Project</ButtonCard>
                     </CardFooter>
                 </Card>
                 )

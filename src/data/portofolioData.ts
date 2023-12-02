@@ -1,38 +1,53 @@
 
 export const portofolio = [
     {
+        id: 1,
         name: 'Gojek',
-        imageSrc: './travel/gojek.png',
+        imageSrc: '/travel/gojek.png',
         headline: 'Gojek: Indonesia’s First $10B Tech Start-Up',
         description: 'Ice House helped Gojek design & implement the largest same-day 24/7 delivery service, including real-time tracking.',
-        sector: 'travel'
+        sector: 'travel',
+        portofolioDescription: 'Ice House created an app for BTPN to allow small business owners to manage not only the point of sales, but also inventory and basic accounting. This all linked to the Jenius ecosystem',
+        complexity: 30,
     },
     {
+        id: 2,
         name: 'Blue Bird',
-        imageSrc: './travel/blue-bird.png',
+        imageSrc: '/travel/blue-bird.png',
         headline: 'Blue Bird: No.1 Taxi Group in South East Asia',
         description: 'MyBB now supports multiple digital payments to access Indonesia’s largest fleet of taxis on demand or even rent later.',
-        sector: 'travel'
+        sector: 'travel',
+        portofolioDescription: 'Ice House created an app for BTPN to allow small business owners to manage not only the point of sales, but also inventory and basic accounting. This all linked to the Jenius ecosystem',
+        complexity: 40,
     },
     {
+        id: 3,
         name: 'Prodia',
-        imageSrc: './health/Prodia.png',
+        imageSrc: '/health/Prodia.png',
         headline: 'Prodia: No. 1 Clinical Laboratory and the National Referral lab',
         description: 'For the first time, patients can instantly chat with: a doctor, receive a referral, book & pay for their test and have their results delivered in the all new Prodia Mobile app',
-        sector: 'health'
+        sector: 'health',
+        portofolioDescription: 'Ice House created an app for BTPN to allow small business owners to manage not only the point of sales, but also inventory and basic accounting. This all linked to the Jenius ecosystem',
+        complexity: 70,
     },
     {
+        id:4,
         name: 'Jenius',
-        imageSrc: './financial/Jenius-bisnis.png',
+        imageSrc: '/financial/Jenius-bisnis.png',
         headline: 'Keuangan yang lebih tertata gak lagi jadi wacana.',
         description: 'Manage your (small) business from the convenience of your mobile phone',
-        sector: 'financial'
+        sector: 'financial',
+        portofolioDescription: 'Ice House created an app for BTPN to allow small business owners to manage not only the point of sales, but also inventory and basic accounting. This all linked to the Jenius ecosystem',
+        complexity: 90,
     },
     {
+        id:5,
         name: 'MyBca',
-        imageSrc: './financial/myBca.png',
+        imageSrc: '/financial/myBca.png',
         headline: 'BCA',
         description: 'Simplify your banking experiences with one single User ID, called BCA ID. myBCA can be accessed through either application within smartphone or through desktop website',
-        sector: 'financial'
+        sector: 'financial',
+        portofolioDescription: 'Ice House created an app for BTPN to allow small business owners to manage not only the point of sales, but also inventory and basic accounting. This all linked to the Jenius ecosystem',
+        complexity: 70,
     }
 ]
