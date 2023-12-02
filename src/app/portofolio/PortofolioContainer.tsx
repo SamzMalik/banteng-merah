@@ -9,7 +9,7 @@ type PortfolioProps = {
     sector: string,
 }[]
 
-const PortofolioContainer = ({ data }) => {
+const PortofolioContainer: React.FC<{ data: PortfolioProps }> = ({ data }) => {
     return (
         <>
             {data && data.map(item => {
