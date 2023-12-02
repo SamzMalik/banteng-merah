@@ -1,20 +1,31 @@
 'use client'
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import CountUp from 'react-countup';
-import ScrollTrigger from 'react-scroll-trigger';
 
 
 const TextCounter = ({ className, end, duration }: { className: string, end: number, duration: number }) => {
-    const [counterOn, setCounterOn] = useState(false)
-    const ScrollTrigg = ScrollTrigger as any
+    const [isVisible, setIsVisible] = useState(false)
+    const counterText: any = useRef(null)
+    const hasAnimatedOnce = useRef(false)
+    useEffect(() => {
+        const observer = new IntersectionObserver(entries => {
+            if (entries[0].isIntersecting && !hasAnimatedOnce.current) {
+                setIsVisible(entries[0].isIntersecting)
+                hasAnimatedOnce.current = true
+            }
+        }, { rootMargin: '-100px' })
+        observer.observe(counterText.current)
+
+        return () => observer.disconnect()
+    },)
 
     return (
-        <ScrollTrigg onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)}>
-            <h1 className={className}>
-                {counterOn && <CountUp end={end} duration={duration} />}
-            </h1>
-        </ScrollTrigg>
+
+        <h1 ref={counterText} className={className}>
+            {isVisible && <CountUp end={end} duration={duration} />}
+        </h1>
+
     )
 }
 

@@ -2,11 +2,7 @@
 'use client'
 import useScreenDetector from '@/hooks/useScreenDetector'
 
-type urlProps = {
-    url: string[]
-}
-
-const Hero = ({ url }: urlProps) => {
+const Hero = () => {
     const [isMobile] = useScreenDetector()
     return (
         <main className="h-screen w-full relative text-center">

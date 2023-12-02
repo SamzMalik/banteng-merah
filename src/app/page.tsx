@@ -9,12 +9,10 @@ import TestimonialCard from "./components/MainPageComponents/TestimonialCard"
 import { testimonialComments } from "@/data/comments"
 
 export default function Home() {
-  const url = ['https://digitalassets.tesla.com/tesla-contents/video/upload/Homepage-Model-Y-Mobile-NA.mp4', 'https://digitalassets.tesla.com/tesla-contents/video/upload/Homepage-Model-Y-Desktop-NA.mp4']
-  console.log('re-rendering...')
 
   return (
     <>
-      <Hero url={url} />
+      <Hero />
       <section className="container p-2 lg:p-0 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-2 lg:gap-10 mt-12">
         <h1 className="self-center text-center text-md lg:text-4xl font-bold">Featured Work</h1>
         <CardBox
@@ -57,7 +55,7 @@ export default function Home() {
           })}
         </div>
       </section >
-      <section className="bg-blue-600 py-10 flex flex-col gap-8 lg:h-screen lg:items-center lg:justify-center">
+      <section className="bg-blue-600 py-10 flex flex-col gap-8 lg:items-center lg:justify-center">
         <div className="container p-2 mx-auto flex justify-center gap-2 lg:gap-8 flex-wrap">
           <CardCounter metric="+ years" duration={3} end={8}>Experience in creating and maintaining mobile app</CardCounter>
           <CardCounter metric="offices" duration={3} end={4}>We operate in multi countries</CardCounter>
