@@ -1,9 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
-'use client'
-import useScreenDetector from '@/hooks/useScreenDetector'
-
 const Hero = () => {
-    const [isMobile] = useScreenDetector()
     return (
         <main className="h-screen w-full relative text-center">
             <video className="w-full h-full absolute object-cover z-10 opacity-90" autoPlay muted loop >

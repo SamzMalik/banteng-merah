@@ -1,7 +1,7 @@
 import { useRouter } from 'next/navigation'
 import { Button, Card, CardBody, CardFooter, CardHeader, Image } from '@nextui-org/react'
 import React from 'react'
-import ButtonCard from '../components/PortofolioComponents/ButtonCard'
+import ButtonCard from './ButtonCard'
 
 type PortfolioProps = {
     id: number,
