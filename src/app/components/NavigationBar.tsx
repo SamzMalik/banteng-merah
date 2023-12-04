@@ -23,7 +23,9 @@ const NavigationBar = () => {
 
       <NavbarContent justify="start">
         <NavbarBrand className="">
-          <Link href='/'>Logo</Link>
+          <Link href='/'>
+            Banteng
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
@@ -40,6 +42,9 @@ const NavigationBar = () => {
 
       {/* Navbar Menu */}
       <NavbarMenu className="bg-primary-white">
+        <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <Link href='/'>Home</Link>
+        </NavbarMenuItem>
         <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <Link href='/about'>About</Link>
         </NavbarMenuItem>

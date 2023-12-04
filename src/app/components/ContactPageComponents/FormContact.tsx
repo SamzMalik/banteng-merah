@@ -23,7 +23,7 @@ const FormContact = () => {
         validationSchema: yup.object().shape({
             company: yup.string().required(),
             name: yup.string().required(),
-            phone: yup.number().min(8, 'Your phone must be more than 8 numbers'),
+            phone: yup.number().required().test('len', 'Your phone must be more than 10 numbers', num => num.toString().length >= 10),
             email: yup.string().required().email(),
         })
     })
