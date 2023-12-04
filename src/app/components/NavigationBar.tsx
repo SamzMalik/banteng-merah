@@ -17,9 +17,6 @@ const NavigationBar = () => {
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} isMenuOpen={isMenuOpen} isBordered shouldHideOnScroll className='shadow-lg z-50'>
-      <NavbarContent className="sm:hidden" justify="start">
-        <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
-      </NavbarContent>
 
       <NavbarContent justify="start">
         <NavbarBrand className="">
@@ -29,36 +26,37 @@ const NavigationBar = () => {
         </NavbarBrand>
       </NavbarContent>
 
+      <NavbarContent className="sm:hidden" justify="end">
+        <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
+      </NavbarContent>
+
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {menuItems.map(item => <NavbarItem key={item}><Link href={`/${item.toLowerCase()}`}>{item}</Link></NavbarItem>)}
       </NavbarContent>
 
       {/* Sign up or Login */}
 
-      <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex"><Link href='#'>Login</Link></NavbarItem>
-        <NavbarItem className=""><Button as={Link} color="primary" href="#" variant="flat">SignUp</Button></NavbarItem>
-      </NavbarContent>
+
 
       {/* Navbar Menu */}
-      <NavbarMenu className="bg-primary-white">
+      <NavbarMenu className="bg-primary-white justify-center items-center font-bold">
         <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <Link href='/'>Home</Link>
+          <Link className='text-2xl' href='/'>Home</Link>
         </NavbarMenuItem>
         <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <Link href='/about'>About</Link>
+          <Link className='text-2xl' href='/about'>About</Link>
         </NavbarMenuItem>
         <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <Link href='/services'>Services</Link>
+          <Link className='text-2xl' href='/services'>Services</Link>
         </NavbarMenuItem>
         <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <Link href='/portofolio'>Portofolio</Link>
+          <Link className='text-2xl' href='/portofolio'>Portofolio</Link>
         </NavbarMenuItem>
         <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <Link href='/teams'>Teams</Link>
+          <Link className='text-2xl' href='/teams'>Teams</Link>
         </NavbarMenuItem>
         <NavbarMenuItem onClick={() => setIsMenuOpen(!isMenuOpen)}>
-          <Link href='/contact'>Contact</Link>
+          <Link className='text-2xl' href='/contact'>Contact</Link>
         </NavbarMenuItem>
       </NavbarMenu>
 

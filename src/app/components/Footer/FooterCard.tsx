@@ -2,7 +2,7 @@ import { Card, Link, CardHeader, Divider, CardBody, CardFooter } from '@nextui-o
 
 const FooterCard = ({ country, children }: { country: string, children: string }) => {
   return (
-    <Card className="max-w-[400px] bg-blue-500 text-blue-50">
+    <Card className="max-w-[400px] bg-blue-600 text-blue-50">
       <CardHeader className="flex gap-3">
         <div className="flex flex-col">
           <p className="text-md font-bold">{country}</p>
@@ -14,7 +14,7 @@ const FooterCard = ({ country, children }: { country: string, children: string }
       <CardFooter>
         <Link
           isExternal
-          color='warning'
+          color='success'
           showAnchorIcon
           href="https://www.google.com/maps"
         >

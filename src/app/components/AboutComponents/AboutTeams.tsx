@@ -36,7 +36,7 @@ const AboutTeams = () => {
             <div className="container mx-auto grid grid-cols-2 lg:grid-cols-4 justify-center gap-2">
                 {team && team.map((person, i) => {
                     return (
-                        <motion.div transition={{ duration: 1, delay: i * 0.2 }} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+                        <motion.div transition={{ duration: 1, delay: 0.2 + i * 0.1 }} initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
                             <Card className='w-ful'>
                                 <CardHeader>
                                     <Image width={128} height={128} src={person.picture.large} alt={person.name.first} className="w-full h-44 lg:h-56 object-cover rounded-md" />

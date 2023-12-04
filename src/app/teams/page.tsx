@@ -1,9 +1,10 @@
 import React from 'react'
+import AboutTeams from '../components/AboutComponents/AboutTeams'
 
 const TeamsPage = () => {
     return (
         <main>
-            Teams
+            <AboutTeams />
         </main>
     )
 }

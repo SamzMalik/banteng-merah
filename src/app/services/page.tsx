@@ -4,10 +4,9 @@ import ServiceContainer from '../components/ServiceComponents/ServiceContainer'
 
 const ServicesPage = () => {
     return (
-        <main className='w-full h-screen overflow-y-scroll snap-y snap-mandatory no-scrollbar'>
+        <main className='w-full h-screen overflow-y-scroll lg:snap-y lg:snap-mandatory no-scrollbar'>
             <ServiceContainer />
-
-            <div className='snap-start  h-screen w-full p-10 bg-blue-900'>
+            {/* <div className='snap-start  h-screen w-full p-10 bg-blue-900'>
                 <div className='flex justify-center gap-10 items-center h-full'>
                     <div className='max-w-xl text-primary-white h-[90%] bg-blue-600 rounded-xl px-4'>
                         <Image alt='something' width={512} height={512} className='w-[1024px]' src='/uiux/uiux.png' />
@@ -76,7 +75,7 @@ const ServicesPage = () => {
 
                 </div>
 
-            </div>
+            </div> */}
         </main>
     )
 }
