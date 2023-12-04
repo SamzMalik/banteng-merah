@@ -45,7 +45,7 @@ const ServicesPage = () => {
                                         <p className='font-bold'>Define</p>
                                     </li>
                                     <li className='p-2 bg-primary-white rounded-md text-primary-black flex flex-col items-center justify-center'>
-                                        <Image alt='something' width={64} height={64} src='/development-process/Design.png' />
+                                        <Image alt='something' width={64} height={64} src='/development-process/design.png' />
                                         <p className='font-bold'>Design</p>
                                     </li>
                                     <li className='p-2 bg-primary-white rounded-md text-primary-black flex flex-col items-center justify-center'>
