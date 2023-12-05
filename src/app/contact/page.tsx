@@ -1,13 +1,13 @@
 import React from 'react'
-import Image from 'next/image';
 import { IoMail, IoCall } from "react-icons/io5";
 import FormContact from '../components/ContactPageComponents/FormContact';
+import ImageContact from './ImageContact';
 
 
 const ContactPage = () => {
     return (
         <main className='lg:h-screen w-full relative flex items-center'>
-            <Image layout='fill' objectFit='cover' alt='background' className='absolute object-cover w-screen h-screen -z-0' src='/road.webp' />
+            <ImageContact />
             <div className='p-3 py-6 lg:p-0 gap-4 container mx-auto flex flex-col lg:flex-row relative z-10 justify-between'>
                 <div className='text-white max-w-2xl flex flex-col gap-6'>
                     <h1 className='text-4xl lg:text-6xl font-bold'>Do you have a mobile app in mind?</h1>
