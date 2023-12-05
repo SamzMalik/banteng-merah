@@ -15,7 +15,7 @@ export const portofolio: Portofolio[] = [
     {
         id: 1,
         name: 'Gojek',
-        imageSrc: '/travel/gojek.webp',
+        imageSrc: '/travel/gojek_30.webp',
         headline: 'Gojek: Indonesia’s First $10B Tech Start-Up',
         description: 'Ice House helped Gojek design & implement the largest same-day 24/7 delivery service, including real-time tracking.',
         sector: 'travel',
@@ -26,7 +26,7 @@ export const portofolio: Portofolio[] = [
     {
         id: 2,
         name: 'Blue Bird',
-        imageSrc: '/travel/blue-bird.webp',
+        imageSrc: '/travel/blue-bird_30.webp',
         headline: 'Blue Bird: No.1 Taxi Group in South East Asia',
         description: 'MyBB now supports multiple digital payments to access Indonesia’s largest fleet of taxis on demand or even rent later.',
         sector: 'travel',
@@ -37,7 +37,7 @@ export const portofolio: Portofolio[] = [
     {
         id: 3,
         name: 'Prodia',
-        imageSrc: '/health/Prodia.webp',
+        imageSrc: '/health/Prodia_30.webp',
         headline: 'Prodia: No. 1 Clinical Laboratory and the National Referral lab',
         description: 'For the first time, patients can instantly chat with: a doctor, receive a referral, book & pay for their test and have their results delivered in the all new Prodia Mobile app',
         sector: 'health',
@@ -48,7 +48,7 @@ export const portofolio: Portofolio[] = [
     {
         id: 4,
         name: 'Jenius',
-        imageSrc: '/financial/Jenius-bisnis.webp',
+        imageSrc: '/financial/Jenius-bisnis_2_50.webp',
         headline: 'Keuangan yang lebih tertata gak lagi jadi wacana.',
         description: 'Manage your (small) business from the convenience of your mobile phone',
         sector: 'financial',
@@ -59,7 +59,7 @@ export const portofolio: Portofolio[] = [
     {
         id: 5,
         name: 'MyBca',
-        imageSrc: '/financial/myBca.webp',
+        imageSrc: '/financial/myBca_2_50.webp',
         headline: 'BCA',
         description: 'Simplify your banking experiences with one single User ID, called BCA ID. myBCA can be accessed through either application within smartphone or through desktop website',
         sector: 'financial',
