@@ -14,7 +14,7 @@ type CardBoxProps = {
 const CardBox = ({ id, src, companyName, companyDesc }: CardBoxProps) => {
     const router = useRouter()
     return (
-        <motion.div initial={{ opacity: 0, scale: 0 }} whileHover={{ scale: 1.05 }} whileInView={{ opacity: 100, scale: 1, }} transition={{ duration: 0.5 }} className="">
+        <motion.div initial={{ opacity: 0, scale: 0 }} whileHover={{ scale: 1.03 }} whileInView={{ opacity: 100, scale: 1, }} transition={{ duration: 0.7 }} className="">
             <Card className='p-2'>
                 <CardHeader className='flex justify-center h-full'>
                     <Image height={320} className='h-56 lg:h-72' src={src} alt='logo' />

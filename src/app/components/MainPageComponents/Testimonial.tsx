@@ -13,7 +13,7 @@ const Testimonial = () => {
                 </div>
             </div>
             <video className="absolute w-full h-full object-cover opacity-90" autoPlay muted loop >
-                <source src="/loopvideo.mp4" />
+                <source src="/videoplayback.webm" />
             </video>
         </section>
     )

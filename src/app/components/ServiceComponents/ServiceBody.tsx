@@ -8,7 +8,7 @@ const ServiceBody = () => {
                     <h1 className='lg:text-3xl font-bold text-center'>Technology</h1>
                     <ul className='flex gap-4 mt-4'>
                         <li className='p-2 bg-primary-white rounded-md text-primary-black flex flex-col items-center justify-center'>
-                            <Image alt='something' width={44} height={44} src='/kotlin.png' />
+                            <Image alt='something' width={44} height={44} src='/kotlin.webp' />
                             <p className='font-bold'>Kotlin</p>
                         </li>
                         <li className='p-2 bg-primary-white rounded-md text-primary-black flex flex-col items-center justify-center'>
