@@ -10,7 +10,7 @@ type TestimonialCardProp = {
 
 const TestimonialCard = ({ companyImg, userName, userRole, userComment }: TestimonialCardProp) => {
     return (
-        <Card className="bg-primary-white text-primary-black shadow-xl opacity-80">
+        <Card className="bg-primary-white text-primary-black hover:ring-4 ring-blue-200">
             <CardHeader className="flex flex-col lg:flex-row gap-3">
                 <Image className="w-20 aspect-square" width={512} height={512} alt="user" src={companyImg} />
                 <div className="text-center">
