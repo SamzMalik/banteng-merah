@@ -11,7 +11,7 @@ export const testimonialComments: commentsType[] = [
         companyImg: 'https://raw.githubusercontent.com/SamzMalik/samz-img-collections/main/pwdk/gojek.1024x1024.webp',
         userName: 'Michael Angelo Moran',
         userRole: 'Application Manager Gojek',
-        userComment: 'We chose to trust Icehouse for developing our first mobile applicatons and it was awesome!'
+        userComment: 'We chose to trust Banteng for developing our first mobile applicatons and it was awesome!'
     },
     {
         companyImg: 'https://raw.githubusercontent.com/SamzMalik/samz-img-collections/main/pwdk/mybca.webp',
