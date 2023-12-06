@@ -4,7 +4,7 @@ import ServiceContainer from '../components/ServiceComponents/ServiceContainer'
 
 const ServicesPage = () => {
     return (
-        <main className='w-full h-screen'>
+        <main className='w-full lg:h-screen mb-4'>
             <ServiceContainer />
             {/* <div className='snap-start  h-screen w-full p-10 bg-blue-900'>
                 <div className='flex justify-center gap-10 items-center h-full'>
