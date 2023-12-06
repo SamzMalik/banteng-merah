@@ -9,7 +9,7 @@ const poppins = Poppins({ subsets: ['latin'], weight: ["300", "400", "500", "700
 
 export const metadata: Metadata = {
   title: 'Banteng',
-  description: "Banteng is a leading mobile app development agency in Indonesia",
+  description: "Banteng is a leading mobile app development agency in Indonesia. Founded in South Jakarta, Banteng is the first Google Certified Developer in South East Asia. We design, build and maintain mobile apps and their backends for most of the leading companies in various industries, like financial services, logistics and transportation, e-commerce, entertainment, loyalty and many more.",
 }
 
 export default function RootLayout({
