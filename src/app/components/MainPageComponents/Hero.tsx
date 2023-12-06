@@ -2,7 +2,7 @@ const Hero = () => {
     return (
         <main className="h-screen w-full relative text-center">
             <video className="w-full h-full absolute object-cover z-10 opacity-90" autoPlay muted loop >
-                <source src='/videoplayback.webm' />
+                <source src='/videoplayback.mp4' />
             </video>
             <div className='relative z-20 text-white flex justify-center h-full w-full flex-col p-2 max-w-4xl mx-auto gap-10'>
                 <h1 className='text-2xl lg:text-6xl font-bold'>Indonesia's leading mobile app development agency</h1>
