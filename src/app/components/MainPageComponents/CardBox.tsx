@@ -17,7 +17,7 @@ const CardBox = ({ id, src, companyName, companyDesc }: CardBoxProps) => {
         <motion.div initial={{ opacity: 0, scale: 0 }} whileHover={{ scale: 1.03 }} whileInView={{ opacity: 100, scale: 1, }} transition={{ duration: 0.7 }} className="">
             <Card className='p-2'>
                 <CardHeader className='flex justify-center h-full'>
-                    <Image height={320} className='h-56 lg:h-72' src={src} alt='logo' />
+                    <Image height={320} className='h-56 lg:h-72' src={src} alt={companyName} />
                 </CardHeader>
                 <CardBody className='lg:h-36'>
                     <h1 className='lg:text-2xl font-bold text-primary-black'>{companyName}</h1>

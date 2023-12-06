@@ -19,7 +19,7 @@ const PortofolioContainer: React.FC<{ data: PortfolioProps }> = ({ data }) => {
             {data && data.map(item => {
                 return (<Card className='w-[550px]' key={item.name}>
                     <div className='flex justify-center w-full p-4'>
-                        <Image className='w-96' src={item.imageSrc} />
+                        <Image className='w-96' src={item.imageSrc} alt={item.name} />
                     </div>
                     <CardHeader>
                         <h1 className='text-2xl font-bold'>{item.name}</h1>

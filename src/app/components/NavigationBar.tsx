@@ -18,13 +18,11 @@ const NavigationBar = () => {
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen} isMenuOpen={isMenuOpen} isBordered shouldHideOnScroll className='shadow-lg z-50'>
 
-      <NavbarContent justify="start">
-        <NavbarBrand className="">
-          <Link href='/'>
-            Banteng
-          </Link>
-        </NavbarBrand>
-      </NavbarContent>
+      <NavbarBrand className="">
+        <Link href='/'>
+          Banteng
+        </Link>
+      </NavbarBrand>
 
       <NavbarContent className="sm:hidden" justify="end">
         <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
