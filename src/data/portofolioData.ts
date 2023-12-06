@@ -17,7 +17,7 @@ export const portofolio: Portofolio[] = [
         name: 'Gojek',
         imageSrc: '/travel/gojek_30.webp',
         headline: 'Gojek: Indonesia’s First $10B Tech Start-Up',
-        description: 'Ice House helped Gojek design & implement the largest same-day 24/7 delivery service, including real-time tracking.',
+        description: 'Banteng helped Gojek design & implement the largest same-day 24/7 delivery service, including real-time tracking.',
         sector: 'travel',
         playStoreLink: 'https://play.google.com/store/apps/details?id=com.gojek.app&hl=en_US',
         portofolioDescription: 'Ice House created an app for BTPN to allow small business owners to manage not only the point of sales, but also inventory and basic accounting. This all linked to the Jenius ecosystem',

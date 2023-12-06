@@ -4,7 +4,7 @@ import ServiceContainer from '../components/ServiceComponents/ServiceContainer'
 
 const ServicesPage = () => {
     return (
-        <main className='w-full h-screen overflow-y-scroll lg:snap-y lg:snap-mandatory no-scrollbar'>
+        <main className='w-full h-screen'>
             <ServiceContainer />
             {/* <div className='snap-start  h-screen w-full p-10 bg-blue-900'>
                 <div className='flex justify-center gap-10 items-center h-full'>

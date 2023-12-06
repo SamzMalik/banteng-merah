@@ -24,12 +24,12 @@ const Footer = () => {
                 </div>
                 <div className="">
                     <div className="flex flex-col lg:flex-row gap-4 lg:gap-0 justify-between text-md items-center p-4 font-bold text-blue-50">
-                        <Link aria-label="Back to home page" href='/'>Banteng</Link>
+                        <Link aria-label="Banteng" href='/'>Banteng</Link>
                         <Link aria-label="Go to about page" href='/about'>About</Link>
                         <Link aria-label="Go to services page" href='/services'>Services</Link>
                         <Link aria-label="Go to portofolio" href='/portofolio'>Portofolio</Link>
                         <Link aria-label="Go to teams page" href='/portofolio'>Teams</Link>
-                        <Link aria-label="go to contact page" href='/contact'>Contact Us</Link>
+                        <Link aria-label="Contact Us" href='/contact'>Contact Us</Link>
                         <div className="flex gap-6">
                             <Link aria-label="See us on twitter" className="text-xl" href='https://twitter.com/elonmusk'><FaSquareXTwitter /></Link>
                             <Link aria-label="See us on instagram" className="text-xl" href='https://www.instagram.com/rickandmorty/'><FaSquareInstagram /></Link>

@@ -2,9 +2,9 @@ import { Image } from '@nextui-org/react'
 
 const ServiceBody = () => {
     return (
-        <div className='text-primary-white flex flex-col lg:h-[612px] justify-center gap-6 bg-blue-600 rounded-xl px-4'>
+        <div className='text-primary-white flex flex-col lg:h-[612px] justify-center gap-6 bg-blue-500 rounded-xl px-4'>
             <div className='flex gap-4'>
-                <div className='bg-blue-600 p-4 rounded-xl mx-auto'>
+                <div className=' p-4 rounded-xl mx-auto'>
                     <h1 className='lg:text-3xl font-bold text-center'>Technology</h1>
                     <ul className='flex gap-4 mt-4'>
                         <li className='p-2 bg-primary-white rounded-md text-primary-black flex flex-col items-center justify-center'>

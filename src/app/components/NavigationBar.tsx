@@ -1,7 +1,8 @@
 'use client'
 import React from 'react'
-import { Button, Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, menuItem } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, menuItem } from "@nextui-org/react";
 import Link from "next/link";
+import Image from 'next/image';
 
 const NavigationBar = () => {
 
@@ -16,11 +17,11 @@ const NavigationBar = () => {
   ]
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} isMenuOpen={isMenuOpen} isBordered shouldHideOnScroll className='shadow-lg z-50'>
+    <Navbar onMenuOpenChange={setIsMenuOpen} isMenuOpen={isMenuOpen} isBordered className='shadow-lg z-50'>
 
       <NavbarBrand className="">
-        <Link href='/'>
-          Banteng
+        <Link className='flex items-center' href='/'>
+          <Image alt='Banteng-Logo' width={64} height={64} src='/redbull.webp' />
         </Link>
       </NavbarBrand>
 
@@ -28,8 +29,8 @@ const NavigationBar = () => {
         <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        {menuItems.map(item => <NavbarItem key={item}><Link href={`/${item.toLowerCase()}`}>{item}</Link></NavbarItem>)}
+      <NavbarContent className="hidden sm:flex gap-8" justify="center">
+        {menuItems.map(item => <NavbarItem key={item}><Link className='hover:bg-blue-100 hover:bg-opacity-70 hover:rounded-xl focus:text-blue-600' href={`/${item.toLowerCase()}`}>{item}</Link></NavbarItem>)}
       </NavbarContent>
 
       {/* Sign up or Login */}
